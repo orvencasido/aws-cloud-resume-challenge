@@ -34,6 +34,7 @@ Cloud Resume Challenge- A comprehensive, multi-step project aimed at developing 
 
 ## Preview of Website
 
-[Preview of Website]([https://orvencasido.click](https://techwithorven.xyz/))
+[Preview of Website](https://techwithorven.xyz/)
+
 
 
