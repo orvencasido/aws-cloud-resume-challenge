@@ -51,7 +51,7 @@
             <h1>Orven Casido</h1>
             <h2>Cloud Engineer</h2>
             <h3 style="color: #a0cfee;">Visitor Counter: <span class="visitor-count">0</span></h3>
-            <a href="#" class="btn-rounded-white" id="download-resume">Download Resume</a> 
+            <a href="http://techwithorven.xyz.s3-website-ap-southeast-2.amazonaws.com/orven-resume.pdf" class="btn-rounded-white">Download Resume Here</a> 
         </div>
         <!-- End #lead-content -->
 
@@ -262,15 +262,6 @@
     </footer>
     <!-- End footer -->
 
-    <script>
-        document.getElementById("download-resume").addEventListener("click", function(event) {
-            event.preventDefault();
-            const link = document.createElement("a");
-            link.href = "http://techwithorven.xyz.s3-website-ap-southeast-2.amazonaws.com/orven-resume.pdf"; // Replace with your actual S3 URL
-            link.download = "Orven_Casido_Resume.pdf"; // The name to use when downloading the file
-            link.click();
-        });
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
