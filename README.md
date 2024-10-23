@@ -9,3 +9,31 @@ Cloud Resume Challenge- A comprehensive, multi-step project aimed at developing 
 
 ## System Architecture
 ![Cloud Resume Challenge Architecture](other/cloud-resume-architecture.png)
+
+
+
+
+
+
+## Technology Used
+
+- AWS S3
+- AWS Lambda
+- AWS CloudFront
+- Add DynamoDB
+- Certificate Manager
+- Domain Name System
+- Namecheap
+- Git 
+- Github Actions
+- Terraform
+
+
+
+
+
+## Preview of Website
+
+[Preview of Website]([https://orvencasido.click](https://techwithorven.xyz/))
+
+
