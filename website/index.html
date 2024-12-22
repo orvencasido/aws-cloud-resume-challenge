@@ -15,6 +15,11 @@
 </head>
 
 <body>
+<style>
+    p{
+        text-align: left;
+    }
+</style>
     <div id="mobile-menu-open" class="shadow-large">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
@@ -73,15 +78,18 @@
                     <h2 class="heading">About Me / <br> Certifications</h2>
                 </div>
                 <div class="col-md-8">
-                    <p>
-                        I am a computer engineer with a passion for cloud technology and building innovative solutions. I enjoy learning about different cloud platforms 
-                        and staying up-to-date with the latest advancements in technology. I have knowledge with different platforms such as AWS, GCP, and Azure, but my 
-                        primary focus is on AWS. I specialize in optimizing performance, ensuring scalability, and enhancing security within cloud environments. Currently, 
-                        I am deepening my knowledge by learning infrastructure as code to further assess my cloud management and deployment.
-                    </p>
+                    <p>I am a computer engineer specializing in cloud technologies, with a strong focus on AWS. I have developed hands-on 
+                        projects that solve real-world problems and drive innovation, while continuously exploring new advancements in 
+                        cloud computing. I am skilled in optimizing performance, scalability, and security within cloud environments, 
+                        and proficient in leveraging infrastructure as code for efficient cloud management and deployment. Currently, 
+                        I am learning CI/CD pipelines using GitHub Actions to streamline software delivery processes and gaining expertise 
+                        in infrastructure as code with Terraform to automate and manage cloud resources. Additionally, I know Git for 
+                        team collaboration and version control, which enhances code management and project efficiency. I am dedicated 
+                        to staying ahead of industry trends and mastering emerging cloud technologies.</p>
                     <br>
-                    <p>* AWS Certified Cloud Practitioner</p>
-                    <p>* Cybersecurity Fundamentals for Engineers</p>
+                    <p>• AWS Cloud Practitioner</p>
+                    <p>• AWS Solutions Architect</p>
+                    <p>• Cybersecurity Fundamentals for Engineers</p>
                 </div>
             </div>
         </div>
@@ -94,21 +102,17 @@
             <div data-date="July 2024 – September 2024">
                 <h3>Carabao Cloud Solutions Inc.</h3>
                 <h4>Internal IT Internship</h4>
-                <p>
-                    I created profiles for clients and remotely monitored PC statuses to ensure optimal performance and security. By completing courses in cybersecurity, 
-                    I enhanced my ability to assess and maintain systems effectively, safeguarding against potential threats. Additionally, I set up and managed various 
-                    types of PC workstations, tailoring configurations to meet specific client needs and organizational standards. My comprehensive approach to system 
-                    management ensured reliable and efficient technological operations for all clients.
-                </p>
+                <p>• Created profiles for clients and remotely monitored PC statuses to ensure optimal performance and security.</p>
+                <p>• Completed cybersecurity courses to enhance skills in system assessment and threat protection.</p>
+                <p>• Configured and managed PC workstations, tailoring setups to meet client needs and organizational standards.</p>
+                <p>• Ensured reliable and efficient technological operations through proactive system management.</p>
             </div>
 
             <div data-date="2019 – January 2024">
                 <h3>Freelancer</h3>
                 <h4>Graphic Artist</h4>
-                <p>
-                    As a freelance graphic designer, I specialize in creating visually engaging infographics and offer video editing services for international clients. 
-                    In addition to these services, I handle photo editing projects for government agencies, ensuring high-quality and professional results across all my work.
-                </p>
+                <p>• Specialize in creating visually engaging infographics and providing video editing services for international clients.</p>
+                <p>• Handle photo editing projects for government agencies, delivering high-quality and professional results.</p>
             </div>
 
         </div>
@@ -121,12 +125,14 @@
             <h3>Southern Luzon State University</h3>
             <span class="education-date">2021 - 2025</span>
             <h4>Bachelor of Science in Computer Engineering</h4>
-            <p>
-                I am pursuing a Bachelor of Science in Computer Engineering, where I have gained a solid foundation in both hardware and software technologies. 
-                Throughout my studies, I have explored how hardware components work together to create efficient computing systems, from designing circuits to 
-                understanding the architecture of microprocessors. On the software side, I have developed skills in various programming languages, enabling me 
-                to build and optimize software solutions.
-            </p>
+            <p>• Pursuing a Bachelor of Science in Computer Engineering, gaining a solid foundation in hardware and software technologies.</p>
+            <p>• Gained expertise in various programming languages to build and optimize software solutions.</p>
+            <p>• Learned machine learning techniques and applied them to real-world problems.</p>
+            <p>• Studied software design principles, focusing on creating scalable and maintainable applications.</p>
+            <p>• Explored the Software Development Life Cycle (SDLC) to understand the full project development process.</p>
+            <p>•Explored how hardware components work together to create efficient computing systems.</p>
+            <p>• Designed circuits and studied the architecture of microprocessors.</p>
+            <p>• Gained knowledge of networking concepts and protocols.</p>
         </div>
         <!-- End .education-block -->
 
@@ -156,12 +162,27 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>AWS Cloud Resume Challenge</h3>
-                        <p>
-                            The Cloud Resume Challenge is a portfolio project where I designed and deployed a personal resume website hosted on AWS. This project integrates 
-                            cloud technologies like S3, Lambda, DynamoDB, and incorporates front-end CI/CD pipelines, Infrastructure as Code (IaC), and serverless 
-                            architecture to showcase my cloud computing and DevOps skills.
-                        </p>
-                        <a href="https://github.com/orvencasido/aws-cloud-resume-challenge">View Project</a>
+                        <p>• Designed and deployed a personal resume website hosted on AWS as part of the Cloud Resume Challenge.</p>
+                        <p>• Implemented front-end CI/CD pipelines and Infrastructure as Code (IaC) to highlight cloud computing and DevOps expertise.</p>
+                        <p>• Integrated cloud technologies like S3, Lambda, DynamoDB, and serverless architecture.</p>
+                        <a href="https://github.com/orvencasido/aws-cloud-resume-challenge">Documentation</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/crud.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>CRUD Task Tracking Web Application</h3>
+                        <p>• Serverless CRUD web application using AWS technologies to securely add, edit, delete, and view tasks.</p>
+                        <p>• Features include front-end hosting with AWS S3 and CloudFront, serverless back-end with Lambda and API Gateway, and DynamoDB for data storage.</p>
+                        <p>• Authentication powered by AWS Cognito ensures secure user access and data integrity.</p>
+                        <a href="https://d26chwpjybvo1s.cloudfront.net/">Live Website Demo | </a>
+                        <a href="https://github.com/orvencasido/aws-crud-task-tracking">Documentation</a> 
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -174,17 +195,15 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Health And Fitness Application</h3>
-                        <p>
-                            The Health and Fitness Application is a Java-based program designed to help users track their fitness goals and monitor overall health. 
-                            It features modules for workouts, tracking nutrition, and setting personalized health goals. The application provides users with 
-                            progress reports, BMI calculation, and tips for improving fitness, all while offering a user-friendly interface for easy navigation and management.
-                        </p>
-                        <a href="https://github.com/orvencasido/health-and-companion-java">View Project</a> 
+                        <p>• Java-based Health and Fitness Application to track fitness goals and monitor overall health.</p>
+                        <p>• Features modules for workouts, nutrition tracking, personalized health goals, and progress reports.</p>
+                        <p>• Includes BMI calculation, fitness tips, and a user-friendly interface for seamless navigation and management.</p>
+                        <a href="https://github.com/orvencasido/health-and-companion-java">Documentation</a> 
                     </div>
                     <!-- End .project-info -->
-
                 </div>
                 <!-- End .project -->
+
                 <br>
                 <h3 class="heading">DevOps Projects</h3>
     
@@ -195,12 +214,9 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Set Up A Web App In The Cloud</h3>
-                        <p>                         
-                            It covers foundational skills like establishing secure SSH connections, setting up an integrated development 
-                            environment (IDE) with Visual Studio Code (VSCode) and its Remote-SSH extension, and deploying a Java-based 
-                            web application with Maven. The guide includes practical instructions for remote server management and 
-                            demonstrates the basics of cloud-based DevOps setups and application development.
-                        </p>
+                        <p>• Covers foundational skills like secure SSH connections, setting up an IDE with VSCode and Remote-SSH extension, and deploying Java-based web applications with Maven.</p>
+                        <p>• Provides practical instructions for remote server management and cloud-based DevOps setups.</p>
+                        <p>• Demonstrates essential techniques for application development in a cloud environment.</p>
                         <a href="https://github.com/orvencasido/DevOps/blob/main/Documentation/Part-1-Set-Up-a-Web-App-in-the-Cloud-Documentation-cropped.pdf">View Project</a>
                     </div>
                     <!-- End .project-info -->
@@ -214,12 +230,9 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Connect A Github Repo with AWS</h3>
-                        <p>
-                            It describes setting up Git on the EC2 instance, initializing a Git repository, and using Git commands like 
-                            git add, git commit, and git push to manage and update files. It also explains the use of GitHub personal 
-                            access tokens for secure authentication, creating an effective workflow for deploying and managing web 
-                            app code updates directly from GitHub to the cloud.
-                        </p>
+                        <p>Details setting up Git on an EC2 instance, initializing a repository, and managing files with Git commands like git add, git commit, and git push.</p>
+                        <p>Explains using GitHub personal access tokens for secure authentication and streamlined code management.</p>
+                        <p>Demonstrates an efficient workflow for deploying and managing web app code updates from GitHub to the cloud.</p>
                         <a href="https://github.com/orvencasido/DevOps/blob/main/Documentation/Part-2-Connect-A-Github-Repo-with-AWS.pdf">View Project</a>
                     </div>
                     <!-- End .project-info -->
@@ -234,12 +247,15 @@
         <h2 class="heading">Skills</h2>
         <ul>
             <li>AWS</li>
+            <li>CI/CD Pipeline</li>
             <li>Python</li>
             <li>Java</li>
             <li>JavaScript</li>
             <li>C++</li>
             <li>Node.js</li>
+            <li>Angular</li>
             <li>React</li>
+            <li>Terraform</li>
             <li>OS</li>
             <li>Java</li>
             <li>EC2</li>
@@ -247,12 +263,15 @@
             <li>RDS</li>
             <li>Lambda</li>
             <li>CloudFormation</li>
-            <li>Python</li>
             <li>IAM</li>
             <li>CloudWatch</li>
             <li>Git</li>
             <li>Debugging</li>
             <li>Networking</li>
+            <li>IaC</li>
+            <li>IaaS</li>
+            <li>PaaS</li>
+            <li>SaaS</li>
         </ul>
     </div>
     <!-- End #skills -->
