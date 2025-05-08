@@ -1,329 +1,672 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume | Orven Casido</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Orven Casido</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add AWS icon from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Add Font Awesome for additional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
-
-<body>
-<style>
-    p{
-        text-align: left;
-    }
-</style>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Orven Casido</h1>
-            <h2>Cloud Practitioner</h2>
-            <h3 style="color: #a0cfee;">Visitor Counter: <span class="visitor-count">0</span></h3>
-            <!-- <a href="http://techwithorven.xyz.s3-website-ap-southeast-2.amazonaws.com/orven-resume.pdf" class="btn-rounded-white">Download Resume Here</a> -->
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me / <br> Certifications</h2>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900/30 backdrop-blur-xl z-50 border-b border-white/10">
+        <div class="container mx-auto px-4 sm:px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#hero" class="text-xl sm:text-2xl font-bold text-white hover:text-blue-400 transition-colors duration-300 tracking-wide">techwithorven</a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-blue-400 transition-colors">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6 sm:space-x-8">
+                    <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                    <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
+                    <a href="#education" class="hover:text-blue-400 transition-colors">Education</a>
+                    <a href="#certifications" class="hover:text-blue-400 transition-colors">Certifications</a>
+                    <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
                 </div>
-                <div class="col-md-8">
-                    <p>I am a computer engineer specializing in cloud technologies, with a strong focus on AWS. I have developed hands-on 
-                        projects that solve real-world problems and drive innovation, while continuously exploring new advancements in 
-                        cloud computing. I am skilled in optimizing performance, scalability, and security within cloud environments, 
-                        and proficient in leveraging infrastructure as code for efficient cloud management and deployment. Currently, 
-                        I am learning CI/CD pipelines using GitHub Actions to streamline software delivery processes and gaining expertise 
-                        in infrastructure as code with Terraform to automate and manage cloud resources. Additionally, I know Git for 
-                        team collaboration and version control, which enhances code management and project efficiency. I am dedicated 
-                        to staying ahead of industry trends and mastering emerging cloud technologies.</p>
-                    <br>
-                    <p>• AWS Cloud Practitioner</p>
-                    <p>• AWS Solutions Architect</p>
-                    <p>• Cybersecurity Fundamentals for Engineers</p>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="flex flex-col space-y-4 mt-4 pb-4">
+                    <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                    <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
+                    <a href="#education" class="hover:text-blue-400 transition-colors">Education</a>
+                    <a href="#certifications" class="hover:text-blue-400 transition-colors">Certifications</a>
+                    <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End #about -->
+    </nav>
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="July 2024 – September 2024">
-                <h3>Carabao Cloud Solutions Inc.</h3>
-                <h4>Internal IT Internship</h4>
-                <p>• Created profiles for clients and remotely monitored PC statuses to ensure optimal performance and security.</p>
-                <p>• Completed cybersecurity courses to enhance skills in system assessment and threat protection.</p>
-                <p>• Configured and managed PC workstations, tailoring setups to meet client needs and organizational standards.</p>
-                <p>• Ensured reliable and efficient technological operations through proactive system management.</p>
-            </div>
-
-            <div data-date="2019 – January 2024">
-                <h3>Freelancer</h3>
-                <h4>Graphic Artist</h4>
-                <p>• Specialize in creating visually engaging infographics and providing video editing services for international clients.</p>
-                <p>• Handle photo editing projects for government agencies, delivering high-quality and professional results.</p>
-            </div>
-
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-16 sm:pt-20 relative overflow-hidden">
+        <!-- Simplified Background -->
+        <div class="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+            <div class="absolute inset-0 bg-[url('images/bg.png')] bg-cover bg-center opacity-10"></div>
+            <!-- Subtle gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5"></div>
         </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Southern Luzon State University</h3>
-            <span class="education-date">2021 - 2025</span>
-            <h4>Bachelor of Science in Computer Engineering</h4>
-            <p>• Pursuing a Bachelor of Science in Computer Engineering, gaining a solid foundation in hardware and software technologies.</p>
-            <p>• Gained expertise in various programming languages to build and optimize software solutions.</p>
-            <p>• Learned machine learning techniques and applied them to real-world problems.</p>
-            <p>• Studied software design principles, focusing on creating scalable and maintainable applications.</p>
-            <p>• Explored the Software Development Life Cycle (SDLC) to understand the full project development process.</p>
-            <p>•Explored how hardware components work together to create efficient computing systems.</p>
-            <p>• Designed circuits and studied the architecture of microprocessors.</p>
-            <p>• Gained knowledge of networking concepts and protocols.</p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>Luis Palad Integrated Highschool</h3>
-            <span class="education-date">2014 - 2020</span>
-            <h4>Science Enhancement Program</h4>
-            <ul>
-                <li>
-                    Science Investigatory Project
-                </li>
-            </ul>
-        </div>
-        <!-- End .education-block -->
-         
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/aws.png" />
+        
+        <div class="container mx-auto px-4 sm:px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+                <!-- Left Content -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <!-- Visitor Counter -->
+                    <div class="inline-block mb-4 sm:mb-6 bg-gray-800/30 backdrop-blur-xl px-3 py-1.5 rounded-full border border-white/10">
+                        <span class="text-xs sm:text-sm ">Visitors: </span>
+                        <span id="visitorCount" class="text-blue-400 font-medium text-xs sm:text-sm"><span class="visitor-count">0</span></span>
                     </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>AWS Cloud Resume Challenge</h3>
-                        <p>• Designed and deployed a personal resume website hosted on AWS as part of the Cloud Resume Challenge.</p>
-                        <p>• Implemented front-end CI/CD pipelines and Infrastructure as Code (IaC) to highlight cloud computing and DevOps expertise.</p>
-                        <p>• Integrated cloud technologies like S3, Lambda, DynamoDB, and serverless architecture.</p>
-                        <a href="https://github.com/orvencasido/aws-cloud-resume-challenge">Documentation</a>
+                    <div class="inline-block mb-4 sm:mb-6">
+                        <span class="text-blue-400 font-medium tracking-wider text-xs sm:text-sm">WELCOME TO MY PORTFOLIO</span>
                     </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/crud.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>CRUD Task Tracking Web Application</h3>
-                        <p>• Serverless CRUD web application using AWS technologies to securely add, edit, delete, and view tasks.</p>
-                        <p>• Features include front-end hosting with AWS S3 and CloudFront, serverless back-end with Lambda and API Gateway, and DynamoDB for data storage.</p>
-                        <p>• Authentication powered by AWS Cognito ensures secure user access and data integrity.</p>
-                        <a href="https://d26chwpjybvo1s.cloudfront.net/">Live Website Demo | </a>
-                        <a href="https://github.com/orvencasido/aws-crud-task-tracking">Documentation</a> 
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/java.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Health And Fitness Application</h3>
-                        <p>• Java-based Health and Fitness Application to track fitness goals and monitor overall health.</p>
-                        <p>• Features modules for workouts, nutrition tracking, personalized health goals, and progress reports.</p>
-                        <p>• Includes BMI calculation, fitness tips, and a user-friendly interface for seamless navigation and management.</p>
-                        <a href="https://github.com/orvencasido/health-and-companion-java">Documentation</a> 
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <br>
-                <h3 class="heading">DevOps Projects</h3>
-    
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/vscode.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Set Up A Web App In The Cloud</h3>
-                        <p>• Covers foundational skills like secure SSH connections, setting up an IDE with VSCode and Remote-SSH extension, and deploying Java-based web applications with Maven.</p>
-                        <p>• Provides practical instructions for remote server management and cloud-based DevOps setups.</p>
-                        <p>• Demonstrates essential techniques for application development in a cloud environment.</p>
-                        <a href="https://github.com/orvencasido/DevOps/blob/main/Documentation/Part-1-Set-Up-a-Web-App-in-the-Cloud-Documentation-cropped.pdf">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/github.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Connect A Github Repo with AWS</h3>
-                        <p>Details setting up Git on an EC2 instance, initializing a repository, and managing files with Git commands like git add, git commit, and git push.</p>
-                        <p>Explains using GitHub personal access tokens for secure authentication and streamlined code management.</p>
-                        <p>Demonstrates an efficient workflow for deploying and managing web app code updates from GitHub to the cloud.</p>
-                        <a href="https://github.com/orvencasido/DevOps/blob/main/Documentation/Part-2-Connect-A-Github-Repo-with-AWS.pdf">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>AWS</li>
-            <li>CI/CD Pipeline</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>C++</li>
-            <li>Node.js</li>
-            <li>Angular</li>
-            <li>React</li>
-            <li>Terraform</li>
-            <li>OS</li>
-            <li>Java</li>
-            <li>EC2</li>
-            <li>S3</li>
-            <li>RDS</li>
-            <li>Lambda</li>
-            <li>CloudFormation</li>
-            <li>IAM</li>
-            <li>CloudWatch</li>
-            <li>Git</li>
-            <li>Debugging</li>
-            <li>Networking</li>
-            <li>IaC</li>
-            <li>IaaS</li>
-            <li>PaaS</li>
-            <li>SaaS</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Message Me!</h2>
-        <div id="contact-form">
-            <form id="my-contact-form">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <div id="form-message" style="display:none;"></div>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2024</span> | ORVEN CASIDO
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
+                        Hi, I'm <span class="text-blue-400">Orven Casido</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 max-w-lg">
+                        DevOps Enthusiast
                     </p>
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
+                        <a href="#contact" class="inline-block bg-blue-500/20 hover:bg-blue-500/30 backdrop-blur-xl text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-lg transition-all transform hover:scale-[1.01] hover:shadow-lg border border-white/10 text-sm sm:text-base">Get in Touch</a>
+                        <a href="#projects" class="inline-block bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl text-blue-400 px-6 py-2.5 sm:px-8 sm:py-3 rounded-lg transition-all transform hover:scale-[1.01] border border-white/10 text-sm sm:text-base">View Projects</a>
+                    </div>
                 </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
+
+                <!-- Right Content -->
+                <div class="md:w-1/2 flex flex-col items-center mt-8 md:mt-0">
+                    <!-- Profile Image with Minimalist Style -->
+                    <div class="relative group">
+                        <div class="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border border-white/10 shadow-lg transform group-hover:scale-[1.02] transition-all duration-500">
+                            <img src="images/orven3.png" alt="Profile Photo" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                        <!-- Social Links -->
+                    <div class="mt-6 sm:mt-8 flex gap-4 sm:gap-6">
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors transform hover:scale-110">
+                            <i class="devicon-github-original text-xl sm:text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors transform hover:scale-110">
+                            <i class="devicon-linkedin-plain text-xl sm:text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors transform hover:scale-110">
+                            <i class="devicon-twitter-original text-xl sm:text-2xl"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/orvencasido" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/orven-casido-39bb58319/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=100008985125961" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="min-h-screen flex items-center py-12 sm:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 flex items-center gap-2 sm:gap-3">
+                <i class="fas fa-user text-blue-400 text-2xl sm:text-3xl"></i>
+                About Me
+            </h2>
+            <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl border border-white/10">
+                <p class="text-lg sm:text-xl font-semibold text-blue-400 mb-4 sm:mb-6 leading-relaxed">
+                    DevOps Enthusiast Passionate about Cloud Automation and Building Scalable Systems.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mt-4 sm:mt-6">
+                    <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                        <i class="fas fa-cloud text-lg sm:text-xl text-blue-400"></i>
+                        <p class="text-sm sm:text-base text-gray-300">Practice DevOps workflows using AWS EC2 VMs</p>
+                    </div>
+                    <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                        <i class="fas fa-code-branch text-lg sm:text-xl text-blue-400"></i>
+                        <p class="text-sm sm:text-base text-gray-300">Automate infrastructure with Terraform and GitHub Actions</p>
+                    </div>
+                    <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                        <i class="devicon-linux-plain text-lg sm:text-xl text-blue-400"></i>
+                        <p class="text-sm sm:text-base text-gray-300">Use Linux for scripting and automation tasks</p>
+                    </div>
+                    <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                        <i class="fas fa-terminal text-lg sm:text-xl text-blue-400"></i>
+                        <p class="text-sm sm:text-base text-gray-300">Write Bash and Python scripts for operations and monitor systems</p>
+                    </div>
+                    <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                        <i class="fas fa-sync text-lg sm:text-xl text-blue-400"></i>
+                        <p class="text-sm sm:text-base text-gray-300">Apply CI/CD pipelines to speed up delivery</p>
+                    </div>
+                    <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                        <i class="fas fa-server text-lg sm:text-xl text-blue-400"></i>
+                        <p class="text-sm sm:text-base text-gray-300">Build real-world cloud projects focused on Scalability, and Automation</p>
+                    </div>
+                    <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                        <i class="devicon-git-plain text-lg sm:text-xl text-blue-400"></i>
+                        <p class="text-sm sm:text-base text-gray-300">Use Git for version control and collaboration</p>
+                    </div>
+                    <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                        <i class="devicon-docker-plain text-lg sm:text-xl text-blue-400"></i>
+                        <p class="text-sm sm:text-base text-gray-300">Learning tools like Docker and other cloud-native technologies</p>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="min-h-screen flex items-center py-12 sm:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 flex items-center gap-2 sm:gap-3">
+                <i class="fas fa-briefcase text-blue-400 text-2xl sm:text-3xl"></i>
+                Experience
+            </h2>
+            <div class="space-y-4 sm:space-y-6">
+                <!-- Experience Item 1 -->
+                <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4">
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold">Internal IT Admin Intern</h3>
+                            <p class="text-sm sm:text-base text-blue-400">Carabao Cloud Solutions Inc. | 2024</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Technical IT Support</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Remote Monitoring and Mangement</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Cybersecurity</span>
+                        </div>
+                    </div>
+                    <p class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-300">Managed client profiles and PC setups, monitored system 
+                        performance, enhanced cybersecurity skills, and ensured reliable tech operations.</p>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4">
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold">Graphic Designer</h3>
+                            <p class="text-sm sm:text-base text-blue-400">Freelancer | 2020 - 2023</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Adobe Photoshop</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Sony Vegas Pro</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Capcut</span>
+                        </div>
+                    </div>
+                    <p class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-300">Designed pubmats for a government agency and edited videos for foreign clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="min-h-screen flex items-center py-12 sm:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 flex items-center gap-2 sm:gap-3">
+                <i class="fas fa-graduation-cap text-blue-400 text-2xl sm:text-3xl"></i>
+                Education
+            </h2>
+            <div class="space-y-4 sm:space-y-6">
+                <!-- Education Item 1 -->
+                <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl border border-white/10">
+                    <h3 class="text-base sm:text-lg font-bold">Bachelor of Science in Computer Engineering</h3>
+                    <p class="text-sm sm:text-base text-blue-400">Southern Luzon State University | 2021 - 2025</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mt-4 sm:mt-6">
+                        <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                            <i class="fas fa-code text-lg sm:text-xl text-blue-400"></i>
+                            <p class="text-xs sm:text-sm text-gray-300">Programming Fundamentals (Java, Python, C#)</p>
+                        </div>
+                        <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                            <i class="fas fa-microchip text-lg sm:text-xl text-blue-400"></i>
+                            <p class="text-xs sm:text-sm text-gray-300">Electronics and Circuit Design</p>
+                        </div>
+                        <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                            <i class="fas fa-desktop text-lg sm:text-xl text-blue-400"></i>
+                            <p class="text-xs sm:text-sm text-gray-300">Computer Hardware Architecture and Design</p>
+                        </div>
+                        <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                            <i class="fas fa-microchip text-lg sm:text-xl text-blue-400"></i>
+                            <p class="text-xs sm:text-sm text-gray-300">Embedded Systems</p>
+                        </div>
+                        <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                            <i class="fas fa-network-wired text-lg sm:text-xl text-blue-400"></i>
+                            <p class="text-xs sm:text-sm text-gray-300">Networking Principles and Protocols</p>
+                        </div>
+                        <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                            <i class="fas fa-brain text-lg sm:text-xl text-blue-400"></i>
+                            <p class="text-xs sm:text-sm text-gray-300">Machine Learning Algorithms</p>
+                        </div>
+                        <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                            <i class="fas fa-database text-lg sm:text-xl text-blue-400"></i>
+                            <p class="text-xs sm:text-sm text-gray-300">Data Structures and Algorithms</p>
+                        </div>
+                        <div class="flex items-start gap-2 sm:gap-3 p-3 sm:p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl transition-all duration-300 transform hover:scale-[1.01] border border-white/5">
+                            <i class="fas fa-code-branch text-lg sm:text-xl text-blue-400"></i>
+                            <p class="text-xs sm:text-sm text-gray-300">Software Development Life Cycle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="min-h-screen flex items-center py-12 sm:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 flex items-center gap-2 sm:gap-3">
+                <i class="fas fa-certificate text-blue-400 text-2xl sm:text-3xl"></i>
+                Certifications
+            </h2>
+            <div class="space-y-4 sm:space-y-6">
+                <!-- Certification Item 1 -->
+                <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4">
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold">Linux Essentials</h3>
+                            <p class="text-sm sm:text-base text-blue-400">Udemy | 2025</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Command Line</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Linux Kernel</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">System Administration</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Scripting</span>
+                        </div>
+                    </div>
+                    <p class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-300">Learned essential Linux Commands, System administration, and Shell Scripting.</p>
+                </div>
+
+                <!-- Certification Item 2 -->
+                <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4">
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold">DICT ICT Diagnostic Exam</h3>
+                            <p class="text-sm sm:text-base text-blue-400">Department of Information and Communications Technology | 2025</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Programming Fundamentals</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Obeject Oriented Programmingva</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Java</span>
+                        </div>
+                    </div>
+                    <p class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-300">Programming Fundamentals, Object Oriented Programming, and Coding in Paper Exam</p>
+                </div>
+
+                <!-- Certification Item 3 -->
+                <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4">
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold">AWS Cloud Practitioner</h3>
+                            <p class="text-sm sm:text-base text-blue-400">Udemy | 2024</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Cloud Computing</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">AWS</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Cloud Services</span>
+                        </div>
+                    </div>
+                    <p class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-300">Demonstrated foundational knowledge of AWS Cloud concepts, Services, Security, Architecture, Pricing, and Support.</p>
+                </div>
+
+                <!-- Certification Item 4 -->
+                <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4">
+                        <div>
+                            <h3 class="text-base sm:text-lg font-bold">Cybersecurity Fundamentals</h3>
+                            <p class="text-sm sm:text-base text-blue-400">ConnectWise | 2024</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">IT Support</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Cybersecurity</span>
+                            <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm">Networking</span>
+                        </div>
+                    </div>
+                    <p class="mt-3 sm:mt-4 text-xs sm:text-sm text-gray-300">Acquired skills in IT support, and CyberSecurity Fundamentals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+    <section id="projects" class="min-h-screen flex items-center py-12 sm:py-16">
+    <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 flex items-center gap-2 sm:gap-3">
+                <i class="fas fa-code text-blue-400 text-2xl sm:text-3xl"></i>
+            Projects
+        </h2>
+            <div class="mb-8 sm:mb-12">
+                <h3 class="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-blue-400">Notable Projects</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl relative group hover:transform hover:scale-[1.01] transition-all duration-300 border border-white/10 flex flex-col h-full">
+                        <div class="absolute -left-2 sm:-left-3 -top-2 sm:-top-3 w-10 h-10 sm:w-12 sm:h-12 bg-blue-500/20 backdrop-blur-xl rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300 border border-white/10">
+                            <i class="devicon-amazonwebservices-original text-lg sm:text-xl text-white"></i>
+                        </div>
+                        <div class="pl-6 sm:pl-8 flex-grow">
+                            <h3 class="text-base sm:text-lg font-bold mt-2">AWS Cloud Resume Challenge</h3>
+                            <p class="mt-2 text-xs sm:text-sm text-gray-300 h-14 sm:h-16">Built and deployed a serverless personal resume website using AWS services and modern web technologies.</p>
+                            <div class="mt-3 sm:mt-4 flex flex-wrap gap-1.5 sm:gap-2">
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-amazonwebservices-original text-xs sm:text-sm"></i>
+                                    S3
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-amazonwebservices-original text-xs sm:text-sm"></i>
+                                    Cloudfront
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-amazonwebservices-original text-xs sm:text-sm"></i>
+                                    DynamoDB
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-amazonwebservices-original text-xs sm:text-sm"></i>
+                                    Lambda
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-amazonwebservices-original text-xs sm:text-sm"></i>
+                                    IAM
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="fas fa-globe text-xs sm:text-sm"></i>
+                                    NameCheap
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-github-original text-xs sm:text-sm"></i>
+                                    GitHub
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="fas fa-code-branch text-xs sm:text-sm"></i>
+                                    CI/CD
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-terraform-plain text-xs sm:text-sm"></i>
+                                    Terraform
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="fas fa-code text-xs sm:text-sm"></i>
+                                    Web Dev
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-4 sm:mt-6">
+                            <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm">
+                                <span>Documentation</span>
+                                <i class="fas fa-arrow-right text-xs sm:text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl relative group hover:transform hover:scale-[1.01] transition-all duration-300 border border-white/10 flex flex-col h-full">
+                        <div class="absolute -left-2 sm:-left-3 -top-2 sm:-top-3 w-10 h-10 sm:w-12 sm:h-12 bg-blue-500/20 backdrop-blur-xl rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300 border border-white/10">
+                            <i class="fas fa-vr-cardboard text-lg sm:text-xl text-white"></i>
+                        </div>
+                        <div class="pl-6 sm:pl-8 flex-grow">
+                            <h3 class="text-base sm:text-lg font-bold mt-2">Virtual Reality Simulator</h3>
+                            <p class="mt-2 text-xs sm:text-sm text-gray-300 h-14 sm:h-16">Developed a VR simulator to improve communication skills through immersive, interactive scenarios with AI integration.</p>
+                            <div class="mt-3 sm:mt-4 flex flex-wrap gap-1.5 sm:gap-2">
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="fas fa-gamepad text-xs sm:text-sm"></i>
+                                    Unity3D
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="fas fa-vr-cardboard text-xs sm:text-sm"></i>
+                                    Virtual Reality
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="fas fa-brain text-xs sm:text-sm"></i>
+                                    LLM
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="fas fa-microphone text-xs sm:text-sm"></i>
+                                    Speech To Text
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="fas fa-volume-up text-xs sm:text-sm"></i>
+                                    Text To Speech
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-csharp-plain text-xs sm:text-sm"></i>
+                                    C#
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-4 sm:mt-6">
+                            <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm">
+                                <span>Documentation</span>
+                                <i class="fas fa-arrow-right text-xs sm:text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl relative group hover:transform hover:scale-[1.01] transition-all duration-300 border border-white/10 flex flex-col h-full">
+                        <div class="absolute -left-2 sm:-left-3 -top-2 sm:-top-3 w-10 h-10 sm:w-12 sm:h-12 bg-blue-500/20 backdrop-blur-xl rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300 border border-white/10">
+                            <i class="devicon-amazonwebservices-original text-lg sm:text-xl text-white"></i>
+                        </div>
+                        <div class="pl-6 sm:pl-8 flex-grow">
+                            <h3 class="text-base sm:text-lg font-bold mt-2">CRUD Task Management</h3>
+                            <p class="mt-2 text-xs sm:text-sm text-gray-300 h-14 sm:h-16">Developed a CRUD task management app with a global database for real-time access and updates using AWS services.</p>
+                            <div class="mt-3 sm:mt-4 flex flex-wrap gap-1.5 sm:gap-2">
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-amazonwebservices-original text-xs sm:text-sm"></i>
+                                    AWS
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-amazonwebservices-original text-xs sm:text-sm"></i>
+                                    Cognito
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-amazonwebservices-original text-xs sm:text-sm"></i>
+                                    DynamoDB
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-amazonwebservices-original text-xs sm:text-sm"></i>
+                                    Lambda
+                                </span>
+                                <span class="px-2 sm:px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs sm:text-sm flex items-center gap-1">
+                                    <i class="devicon-amazonwebservices-original text-xs sm:text-sm"></i>
+                                    API Gateway
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mt-4 sm:mt-6">
+                            <a href="#" class="text-blue-400 hover:text-blue-300 inline-flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm">
+                                <span>Documentation</span>
+                                <i class="fas fa-arrow-right text-xs sm:text-sm"></i>
+                            </a>
+                </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Projects Button -->
+            <div class="text-center mt-12">
+                <a href="basic-projects.html" class="inline-flex items-center gap-2 bg-gray-800/30 hover:bg-gray-800/40 backdrop-blur-xl text-white px-8 py-4 rounded-lg transition-all transform hover:scale-[1.01] hover:shadow-lg border border-white/10">
+                    <span>View More Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <p class="text-gray-400 mt-4 text-sm">Check out my collection of basic projects and learning exercises</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="min-h-screen flex items-center py-12 sm:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 flex items-center gap-2 sm:gap-3">
+                <i class="fas fa-cogs text-blue-400 text-2xl sm:text-3xl"></i>
+                Skills
+            </h2>
+            <div class="mb-8 sm:mb-12">
+                <h3 class="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-blue-400">Cloud & DevOps</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="devicon-amazonwebservices-original colored text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
+                        <p class="font-medium text-xs sm:text-sm">Cloud Computing</p>
+                        <p class="text-[10px] sm:text-xs text-gray-400 mt-0.5 sm:mt-1">AWS</p>
+                    </div>
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="devicon-terraform-plain colored text-3xl sm:text-4xl mb-2 sm:mb-3"></i>
+                        <p class="font-medium text-xs sm:text-sm">Infrastructure as Code</p>
+                        <p class="text-[10px] sm:text-xs text-gray-400 mt-0.5 sm:mt-1">Terraform</p>
+                    </div>
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="fas fa-code-branch text-3xl sm:text-4xl mb-2 sm:mb-3 text-blue-400"></i>
+                        <p class="font-medium text-xs sm:text-sm">CI/CD Pipelines</p>
+                    </div>
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="fas fa-server text-3xl sm:text-4xl mb-2 sm:mb-3 text-blue-400"></i>
+                        <p class="font-medium text-xs sm:text-sm">System Administration</p>
+                    </div>
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="devicon-linux-plain text-3xl sm:text-4xl mb-2 sm:mb-3 text-blue-400"></i>
+                        <p class="font-medium text-xs sm:text-sm">Linux</p>
+                        <p class="text-[10px] sm:text-xs text-gray-400 mt-0.5 sm:mt-1">Bash</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programming & Scripting -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold mb-6 text-blue-400">Programming & Scripting</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="devicon-python-plain colored text-4xl sm:text-5xl mb-3"></i>
+                        <p class="font-medium text-sm sm:text-base">Python</p>
+                    </div>
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="devicon-java-plain colored text-4xl sm:text-5xl mb-3"></i>
+                        <p class="font-medium text-sm sm:text-base">Java</p>
+                    </div>
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="devicon-bash-plain text-4xl sm:text-5xl mb-3 text-gray-300"></i>
+                        <p class="font-medium text-sm sm:text-base">Bash Scripting</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web & Application Development -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold mb-6 text-blue-400">Web & Application Development</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="devicon-html5-plain colored text-4xl sm:text-5xl mb-3"></i>
+                        <p class="font-medium text-sm sm:text-base">HTML5</p>
+                    </div>
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="devicon-css3-plain colored text-4xl sm:text-5xl mb-3"></i>
+                        <p class="font-medium text-sm sm:text-base">CSS</p>
+                    </div>
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="devicon-javascript-plain colored text-4xl sm:text-5xl mb-3"></i>
+                        <p class="font-medium text-sm sm:text-base">JavaScript</p>
+                    </div>
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="devicon-tailwindcss-plain colored text-4xl sm:text-5xl mb-3"></i>
+                        <p class="font-medium text-sm sm:text-base">Tailwind CSS</p>
+                    </div>
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="fas fa-plug text-4xl sm:text-5xl mb-3 text-blue-400"></i>
+                        <p class="font-medium text-sm sm:text-base">RESTful APIs</p>
+                </div>
+                </div>
+                </div>
+
+            <!-- AI & Emerging Technologies -->
+            <div class="mb-12">
+                <h3 class="text-xl font-bold mb-6 text-blue-400">AI & Emerging Technologies</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="fas fa-robot text-4xl sm:text-5xl mb-3 text-blue-400"></i>
+                        <p class="font-medium text-sm sm:text-base">AI Agent</p>
+                </div>
+                    <div class="bg-gray-800/30 backdrop-blur-xl p-6 rounded-xl text-center group border border-white/10 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="fas fa-brain text-4xl sm:text-5xl mb-3 text-blue-400"></i>
+                        <p class="font-medium text-sm sm:text-base">Machine Learning</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="min-h-screen flex items-center py-12 sm:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 flex items-center gap-2 sm:gap-3">
+                <i class="fas fa-envelope text-blue-400 text-2xl sm:text-3xl"></i>
+                Contact
+            </h2>
+            <div class="bg-gray-800/30 backdrop-blur-xl p-4 sm:p-6 rounded-xl border border-white/10">
+                <form class="space-y-4 sm:space-y-6" id="my-contact-form">
+                    <div>
+                        <label class="block mb-1.5 sm:mb-2 text-xs sm:text-sm">Name</label>
+                        <input name="_subject" type="text" class="w-full bg-gray-800/30 backdrop-blur-xl border border-white/10 rounded-lg px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base focus:outline-none focus:border-blue-400">
+                    </div>
+                    <div>
+                        <label class="block mb-1.5 sm:mb-2 text-xs sm:text-sm">Email</label>
+                        <input name="_replyto" type="email" class="w-full bg-gray-800/30 backdrop-blur-xl border border-white/10 rounded-lg px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base focus:outline-none focus:border-blue-400">
+                    </div>
+                    <div>
+                        <label class="block mb-1.5 sm:mb-2 text-xs sm:text-sm">Message</label>
+                        <textarea name="message" class="w-full bg-gray-800/30 backdrop-blur-xl border border-white/10 rounded-lg px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base focus:outline-none focus:border-blue-400" rows="4 sm:rows-6"></textarea>
+                    </div>
+                    <button type="submit" class="w-full sm:w-auto bg-blue-500/20 hover:bg-blue-500/30 backdrop-blur-xl text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-colors border border-white/10 text-sm sm:text-base">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900/30 backdrop-blur-xl py-6 border-t border-white/10">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center text-sm sm:text-base">
+                <p class="text-gray-400">© 2025 All Rights Reserved | Orven Casido</p>
             </div>
         </div>
     </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = mobileMenuButton.querySelector('i');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Toggle between hamburger and close icon
+            if (menuIcon.classList.contains('fa-bars')) {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+    </script>
 </body>
-
 </html>

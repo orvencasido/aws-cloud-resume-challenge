@@ -79,7 +79,7 @@ The final step involved using Terraform to manage my infrastructure. While I did
 ## Conclusion
 Overall, it took me almost 2 months to complete this project. As a student in an internship during this time, I initially finished most of the project within the first week, including the terraforming aspect. However, I lacked the time to document the challenge fully. Now, I am pleased to present my completed project.
 
-2024 | Orven Casido
+2024 | Orven Casido | All Rights Reserved
 
 
 
